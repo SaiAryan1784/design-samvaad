@@ -2,9 +2,10 @@ export function initSpeakerCarousel(carousel) {
   if (!carousel) return;
 
   const speakers = [...carousel.querySelectorAll('[data-speaker]')];
+  const grid = carousel.querySelector('[data-speaker-grid]');
   const previous = carousel.querySelector('.speaker-nav--prev');
   const next = carousel.querySelector('.speaker-nav--next');
-  if (!speakers.length || !previous || !next) return;
+  if (!speakers.length || !grid || !previous || !next) return;
 
   let center = 0;
   let autoAdvance;

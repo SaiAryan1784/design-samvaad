@@ -53,32 +53,25 @@
   transition: opacity .5s var(--ease);
   pointer-events: none;
 }
-.speaker__photo[data-tint="green"]  { --tint: var(--green); }
-.speaker__photo[data-tint="blue"]   { --tint: var(--blue); }
+.speaker__photo[data-tint="green"],
+.speaker__photo[data-tint="blue"],
+.speaker__photo[data-tint="yellow"],
+.speaker__photo[data-tint="red"] {
+  --speaker-tint: var(--tint);
+}
+.speaker__photo[data-tint="green"] { --tint: var(--green); }
+.speaker__photo[data-tint="blue"] { --tint: var(--blue); }
 .speaker__photo[data-tint="yellow"] { --tint: var(--yellow); }
-.speaker__photo[data-tint="pink"]   { --tint: var(--pink); }
-.speaker__photo[data-tint="green"]  { --speaker-tint: var(--green); }
-.speaker__photo[data-tint="blue"]   { --speaker-tint: var(--blue); }
-.speaker__photo[data-tint="yellow"] { --speaker-tint: var(--yellow); }
-.speaker__photo[data-tint="pink"]   { --speaker-tint: var(--pink); }
-.speaker__photo[data-tint="blue"]::after {
-  inset: 2px;
-  border-radius: 1rem;
-}
-.speaker__photo[data-tint="green"]::after {
-  inset: 2px;
-  border-radius: 1rem;
-}
-.speaker__photo[data-tint="yellow"]::after {
-  inset: 2px;
-  border-radius: 1rem;
-}
-.speaker__photo[data-tint="pink"]::after {
+.speaker__photo[data-tint="red"] { --tint: var(--red); }
+.speaker__photo[data-tint="green"]::after,
+.speaker__photo[data-tint="blue"]::after,
+.speaker__photo[data-tint="yellow"]::after,
+.speaker__photo[data-tint="red"]::after {
   inset: 2px;
   border-radius: 1rem;
 }
 .speaker__name {
-  margin: 1rem 0 .2rem;
+  margin: 0.5rem 0 0;
   text-align: center;
   font-weight: 700;
   font-size: clamp(1.15rem, 2.1vw, 1.4rem);

@@ -24,7 +24,7 @@
 @import url("components/dialogue.css")     layer(components);
 @import url("components/milestone.css")    layer(components);
 @import url("components/road.css")         layer(components);
-@import url("components/speaker-card.css?v=84") layer(components);
+@import url("components/speaker-card.css?v=85") layer(components);
 @import url("components/gallery.css")      layer(components);
 @import url("components/rosette.css")      layer(components);
 @import url("components/tailgate.css")     layer(components);

@@ -8,9 +8,10 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 4vw, 3rem);
-  min-height: clamp(22rem, 43vw, 27rem);
+  min-height: 28.75rem;
+  height: 28.75rem;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 /* Card look (colour, mat, typography) comes from the
    section-agnostic .speaker-card component — this layer only
@@ -98,6 +99,10 @@
 .speaker-nav--prev { left: clamp(.25rem, 1.5vw, 1rem); }
 .speaker-nav--next { right: clamp(.25rem, 1.5vw, 1rem); }
 @media (max-width: 560px) {
-  .speaker-grid { padding-inline: .5rem; }
+  .speaker-grid {
+    height: 22.75rem;
+    min-height: 22.75rem;
+    padding-inline: .5rem;
+  }
   .speaker { width: min(72%, 15rem); }
 }
